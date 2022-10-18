@@ -1,10 +1,8 @@
 public class Month {
-    private int numberMonth; //порядковый номер месяца
+
     private String nameMonth; //имя месяца
     private int[] countStepsInDaysMonth = new int[30]; //массив количества шагов по дням месяца
-
     public Month(int numberMonth) {
-        this.numberMonth = numberMonth;
         //заполним имя месяца исходя из его порядкового номера
         if(numberMonth == 0) {
             this.nameMonth = "Январь";
@@ -32,7 +30,6 @@ public class Month {
             this.nameMonth = "Декабрь";
         }
     }
-
     public int[] getCountStepsInDaysMonth() {
         return countStepsInDaysMonth;
     }
@@ -40,7 +37,6 @@ public class Month {
     public void setCountStepsInDaysMonth(int numberDay, int countSteps) {
         this.countStepsInDaysMonth[numberDay] = countSteps;
     }
-
     public String getNameMonth() {
         return nameMonth;
     }

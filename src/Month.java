@@ -1,9 +1,7 @@
 public class Month {
-
-    private String nameMonth; //имя месяца
-    private int[] countStepsInDaysMonth = new int[30]; //массив количества шагов по дням месяца
+    private String nameMonth;
+    private int[] countStepsInDaysMonth = new int[30];
     public Month(int numberMonth) {
-        //заполним имя месяца исходя из его порядкового номера
         if(numberMonth == 0) {
             this.nameMonth = "Январь";
         } else if(numberMonth == 1) {
